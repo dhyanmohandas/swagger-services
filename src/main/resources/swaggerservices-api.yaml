@@ -1,0 +1,19 @@
+openapi: 3.0.0
+
+info:
+  title: Swagger Services
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.0.1
+
+paths:
+  /info:
+    get:
+      summary: Return the info.
+      operationId: getInfo
+      responses:
+        '200':
+          description: return the info
+          content:
+            application/json:
+              schema: 
+                type: string
